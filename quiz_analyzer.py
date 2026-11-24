@@ -1,0 +1,17 @@
+quiz1 = int(input("Enter quiz 1 score: "))
+quiz2 = int(input("Enter quiz 2 score: "))
+quiz3 = int(input("Enter quiz 3 score: "))
+quiz4 = int(input("Enter quiz 4 score: "))
+quiz5 = int(input("Enter quiz 5 score: "))
+nums = [quiz1, quiz2, quiz3, quiz4, quiz5]
+
+print("===== QUIZ SCORE REPORT =====")
+print(f"Quiz Scores: {nums}")
+print(f"Number of Quizzes: {len(nums)}")
+print(f"Total Score: {sum(nums)}")
+print(f"Average Score: {sum(nums) / len(nums):.2f}")
+print(f"Highest Score: {max(nums)}")
+print(f"Lowest Score: {min(nums)}")
+print(f"Ascending: {sorted(nums)}")
+print(f"Descending: {sorted(nums, reverse=True)}")
+print(f"Original Scores: {nums}")
